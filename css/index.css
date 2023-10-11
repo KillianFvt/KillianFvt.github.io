@@ -43,3 +43,9 @@ h1 {
   font-weight: 300 !important;
   text-shadow: black 0 0 50px, #ffffff80 0 0 25px;
 }
+
+#typed_container * {
+  font-size: 1.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #333
+}
