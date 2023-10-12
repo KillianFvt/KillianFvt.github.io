@@ -34,6 +34,9 @@
   </header>
 
   <main>
+
+    <div id="bgImg"></div>
+
     <div id="header_img">
       <div class="d-flex justify-content-center align-content-center" id="header_img_div">
         <h1 class="display-1 text-center" id="header_img_title">Killian Fauvette</h1>
@@ -47,16 +50,47 @@
 
     <section class="mt-5 mx-5" id="whoami">
       <div class="jumbotron">
-        <h2 class="display-4">Présentation</h2>
-        <p class="lead">Qui suis-je ?</p>
+        <h2 class="display-4 text-center text-lg-start">Présentation</h2>
+        <p class="lead text-center text-lg-start">Qui suis-je ?</p>
         <hr class="my-4">
-        <p>Salut ! Moi c'est Killian, un étudiant développeur à EPSI Paris la Défense, passionné d'informatique depuis des années. J'apprends principalement à coder, mais développe d'autres compétences comme le management et un peu de marketing.</p>
-        <p>J'enchaine les projets en tout genre, que ce soit de mon côté ou à l'école, afin de perfectionner mes techniques et apprendre de plus en plus pour développer mes compétences.</p>
-        <p>Je suis très appliqué et sérieux dans mon travail, la perte de temps est une grande chose à éviter pour moi. Chaque code est scrupuleusement optimisé et révisé dès les premières versions afin de gagner du temps lors de futurs développements.</p>
-        <p>Enfin, les défis ne sont pas un problème pour moi, il s'agit même d'une opportunité d'apprendre et d'évoluer.</p>
+        <div id="jumSub" class="d-flex flex-row justify-content-evenly align-items-center">
+          <div id="presTxt" class="g-shadow">
+            <p>Salut ! Moi c'est Killian, un étudiant développeur à EPSI Paris la Défense, passionné d'informatique depuis des années. J'apprends principalement à coder, mais développe d'autres compétences comme le management et un peu de marketing.</p>
+            <p>J'enchaine les projets en tout genre, que ce soit de mon côté ou à l'école, afin de perfectionner mes techniques et apprendre de plus en plus pour développer mes compétences.</p>
+            <p>Je suis très appliqué et sérieux dans mon travail, la perte de temps est une grande chose à éviter pour moi. Chaque code est scrupuleusement optimisé et révisé dès les premières versions afin de gagner du temps lors de futurs développements.</p>
+            <p>Enfin, les défis ne sont pas un problème pour moi, il s'agit même d'une opportunité d'apprendre et d'évoluer.</p>
+          </div>
+          <div id="presImg">
+            <img src="src/img/smiling_pain.jpeg" alt="Smiling in pain">
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly align-items-center flex-lg-column mt-lg-5" id="presContact">
+          <p class="m-0">Vous voulez en savoir plus ?</p>
+          <a href="contact.html" class="btn btn-primary btn-sm btn mt-lg-3" id="presContactBtn">Contactez-moi</a>
+        </div>
       </div>
     </section>
-    <section id="projects"></section>
+
+    <section id="projects" class="mt-5 mx-5">
+      <div class="jumbotron">
+        <h2 class="display-4 text-center text-lg-start">Projets</h2>
+        <p class="lead text-center text-lg-start">Les différents projets réalisés</p>
+        <hr class="my-4">
+        <div id="projTxtContainer" class="d-flex flex-lg-row justify-content-evenly align-items-center">
+          <div id="projImg">
+            <img src="src/img/project.jpeg" alt="Projects">
+          </div>
+          <div id="projTxt">
+            <p>Mes projets sont toujours comme tout bon développeur, c'est-à-dire que beaucoup ne sont pas terminés.</p>
+            <p>Cependant, ils m'ont tous beaucoup appris et beaucoup aidé à avancer sur les technologies qu'ils abordent.</p>
+            <p>Je vous laisse les découvrir en cliquant ci-dessous. 👇</p>
+          </div>
+        </div>
+        <div id="projLinkContainer">
+           <!-- https://devdevout.com/css/css-list-styles -->
+        </div>
+      </div>
+    </section>
     <section id="more"></section>
   </main>
 
