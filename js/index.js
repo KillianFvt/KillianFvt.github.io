@@ -8,8 +8,11 @@ let strings = [
   'C# .Net Core <img src=\"src/img/dotnet.webp\" style="display: inline; height: 2rem" alt="tech_icon">',
   'C# .Net WPF <img src=\"src/img/dotnet.webp\" style="display: inline; height: 2rem" alt="tech_icon">',
 ]
+
+let typed_q = document.getElementById('typed_q');
+
 document.addEventListener('DOMContentLoaded', () => {
-  let typed_q = new Typed('#typed_q', {
+  let typed_q_anim = new Typed(typed_q, {
     strings: strings,
     typeSpeed: 20,
     backSpeed: 30,
