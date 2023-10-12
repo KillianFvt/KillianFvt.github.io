@@ -56,7 +56,7 @@ h1 {
 }
 
 #presTxt, #projTxt {
-  width: 70%;
+  width: 100%;
   height: fit-content;
   position: relative;
   padding: 2.5%;
@@ -64,7 +64,6 @@ h1 {
 
   background: url("../src/img/background.jpg") no-repeat fixed center;
   background-size: 100vw 100vh;
-  backdrop-filter: blur(50px);
   box-shadow: inset #00000050 0 0 15px 0;
 }
 
@@ -73,18 +72,15 @@ h1 {
 }
 
 #projTxt {
-  text-align: end;
+  text-align: start;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
 }
 
 #projTxt * {
   width: fit-content;
 }
-
-
-
 
 #presImg, #projImg {
   width: 25%;
@@ -107,13 +103,14 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  #presTxt {
+  #presTxt, #projTxt {
     font-size: 1.25rem;
     width: 70%;
   }
 
   #projTxt {
-    font-size: 1.25rem;
+    text-align: end;
+    align-items: start;
   }
 
   #presImg {
