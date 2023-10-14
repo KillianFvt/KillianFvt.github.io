@@ -21,3 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
     smartBackspace: true,
   });
 });
+
+let projDoorA = document.getElementsByClassName('projDoorA')[0];
+let projDoorB = document.getElementsByClassName('projDoorB')[0];
+
+let projDoorTxt = document.getElementById('projDoorTxt');
+
+projDoorTxt.addEventListener('click', () => {
+
+  projDoorA.style.left = '10%';
+  projDoorA.style.width = '100%';
+  projDoorA.style.height = '150%';
+
+  projDoorB.style.right = '10%';
+  projDoorB.style.width = '100%';
+  projDoorB.style.height = '150%';
+
+  setTimeout(() => {
+    window.location.href = 'projects.html';
+  } , 250);
+
+});
+
