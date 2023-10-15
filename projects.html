@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Killian Fauvette - Projets</title>
+  <meta name="description" content="Projets réalisés par Killian Fauvette tout au long de sa vie.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -13,12 +13,12 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/jpeg" href="src/img/KF%20logo.jpeg">
 
   <link href=css/bootstrap.css rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/projects.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,13 +27,155 @@
 
 <header id="navbar" class="d-flex justify-content-center py-3 fixed-top">
   <ul class="nav nav-pills">
-    <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
-    <li class="nav-item"><a href="#" class="nav-link">Projets</a></li>
-    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    <li class="nav-item"><a href="/" class="nav-link">Accueil</a></li>
+    <li class="nav-item"><a href="projects.html" class="nav-link active" aria-current="page">Projets</a></li>
+    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
   </ul>
 </header>
 
-<main></main>
+<main class="position-relative d-flex flex-column align-items-center">
+  <div id="bg-main"></div>
+
+  <div id="projContainer" class="d-flex flex-row flex-wrap align-items-start justify-content-evenly w-100">
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Fakestagram</h3>
+        <h4>Mobile / Python</h4>
+        <div class="projCardImg">
+          <img src="src/img/fakestagram.jpg" alt="project image">
+        </div>
+        <p>Fakestagram est une copie d'Instagram réalisée avec Flutter. Son but était de développer mes compétences flutter mais aussi de progresser sur le développement d'API REST en Python avec Flask.</p>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">MetroBoulotDodo</h3>
+        <h4>Mobile</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/flutter.png" alt="project image">
+        </div>
+        <p>MetroBoulotDodo est une application qui nous affiche les horaires indiqués en gare en temps réel, pour ne pas louper son train et se concentrer sur l'essentiel, de plus elle nous alerte de tout problème. Elle utilise l'API de la SNCF et RATP (<a href="https://navitia.io/">Navitia</a>) pour fonctionner.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">AALIA Talk</h3>
+        <h4>Mobile / Python (+IA)</h4>
+        <div class="projCardImg">
+          <img src="src/img/aalia%20talk.png" alt="project image">
+        </div>
+        <p>AALIA Talk est une application créée par AALIA Tech, elle vise le secteur médical et ses services de traductions. Elle permet d'avoir un traducteur automatique peu cher et beaucoup plus précis qu'un simple traducteur en utilisant l'IA.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Tadaaastic</h3>
+        <h4>Mobile</h4>
+        <div class="projCardImg">
+          <img src="src/img/tadaaastic.jpg" alt="project image">
+        </div>
+        <p>Tadaastic est une application ne prise de note et todo list développée spécialement pour les personnes atteintes de TDAH (d'où son nom Tadaaastic). Elle a été inventée et designée par une personne en ayant besoin.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Simple application Météo</h3>
+        <h4>Mobile</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/flutter.png" alt="project image">
+        </div>
+        <p>Cette application a été réalisée en 6h avec Flutter, elle montre la météo à chaque heure des 5 jours à venir. Elle utilise une API météo pour avoir les informations météorologiques.</p>
+      </div>
+    </div>
+
+    <div class="projCard" style="flex-basis: 85%">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Ce portfolio</h3>
+        <h4>Web (+bootstrap)</h4>
+        <div class="projCardImg">
+          <img src="src/img/KF%20logo.jpeg" alt="project image">
+        </div>
+        <p>Ce portfolio a été demandé en cours par notre cher et magnifique intervenant, c'est un portfolio de développeur, rien à dire de plus.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">La Patte de Velours</h3>
+        <h4>Site Web</h4>
+        <div class="projCardImg">
+          <img src="src/img/pattevelours.svg" alt="project image">
+        </div>
+        <p>Ce site a été développé durant mon stage de première année, il s'agit s'un simple site vitrine destiné à donner des informations en ligne sur le bar à chat du même nom. Vous pouvez le voir sur <a href="https://www.lapattedevelours.fr/">lapattedevelours.fr</a>.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Habi't</h3>
+        <h4>Site web / Python</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/django.png" alt="project image">
+        </div>
+        <p>Habi't était un projet transversal de première année consistant à créer un site mettant en relation des agences immobilières et des particuliers souhaitant acheter. Il utilise python Django en tech backend.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">SmartBike</h3>
+        <h4>Site Web / PHP</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/smartbike.png" alt="project image">
+        </div>
+        <p>SmartBike était notre premier projet transversal en première année, le but était de faire un site de présentation d'un nouveau vélo électrique avec un backend en PHP.</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Portfolio de Eve Arfi <br>+ Mini Site Web</h3>
+        <h4>Site Web</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/evearfi.jpg" alt="project image">
+        </div>
+        <p>Une amie en étude de graphic design m'a demandé de l'aide pour faire son portfolio et un projet "mini site web". Vous pouvez le retrouver ici :
+          <a href="https://evearfi.github.io/">evearfi.github.io</a></p>
+      </div>
+    </div>
+
+    <div class="projCard" style="flex-basis: 85%">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Nom Projet</h3>
+        <h4>Categorie(s)</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/flutter.png" alt="project image">
+        </div>
+        <p>Description</p>
+      </div>
+    </div>
+
+    <div class="projCard">
+      <div class="projCardContent">
+        <h3 class="projCardTitle">Nom Projet</h3>
+        <h4>Categorie(s)</h4>
+        <div class="projCardImg projIcon">
+          <img src="src/img/flutter.png" alt="project image">
+        </div>
+        <p>Description</p>
+      </div>
+    </div>
+
+
+  </div>
+</main>
 
 <footer></footer>
 

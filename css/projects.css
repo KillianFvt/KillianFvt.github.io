@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;500;600;700&display=swap');
+
+main {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+#bg-main {
+  --bg-blur: 20px;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../src/img/bg_projects.png") no-repeat fixed center;
+  filter: blur(var(--bg-blur));
+  background-size: 100% 100%;
+  background-position-x: 25%;
+  z-index: -100;
+}
+
+.projCard {
+  width: 85%;
+  max-width: 350px;
+  display: flex;
+
+  border: solid white 1px;
+  border-radius: 10px;
+
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.projCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.projCard h3 {
+  text-shadow: #FFFFFF50 0 0 10px;
+}
+
+.projCard h4 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 1em;
+
+  color: #757575;
+}
+
+.projCardImg {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 6/5;
+}
+
+.projCardImg.projIcon {
+  padding: 17.5%;
+  filter: drop-shadow(0 0 10px #000000AA);
+}
+
+.projCard img {
+  align-self: center;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  #bg-main {
+
+    --bg-blur: 25px;
+
+    background-position-x: center;
+    background-size: cover;
+  }
+
+  .projCard {
+    width: 45%;
+    max-width: 250px;
+  }
+}
