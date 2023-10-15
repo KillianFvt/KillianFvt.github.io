@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/competences.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -29,7 +30,7 @@
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Accueil</a></li>
       <li class="nav-item"><a href="projects.html" class="nav-link">Projets</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
   </header>
 
@@ -74,8 +75,9 @@
     <section id="projects" class="mt-5 px-5 overflow-hidden">
       <div class="jumbotron">
         <h2 class="display-4 text-center text-lg-start">Projets</h2>
-        <p class="lead text-center text-lg-start">Les différents projets réalisés</p>
+        <p class="lead text-center text-lg-start">Mes différents projets réalisés ou en cours</p>
         <hr class="my-4">
+        <br><br>
         <div id="projLinkContainer" class="d-flex flex-column align-items-center">
            <!-- https://devdevout.com/css/css-list-styles -->
           <div id="projDoor" class="position-relative" >
@@ -85,9 +87,168 @@
           </div>
         </div>
       </div>
-      <br><br><br><br>
+      <br>
     </section>
-    <section id="more"></section>
+
+    <section id="competences" class="mt-5 px-5">
+      <div class="jumbotron">
+        <h2 class="display-4 text-center text-lg-start">Compétences</h2>
+        <p class="lead text-center text-lg-start">Toutes mes compétences</p>
+        <hr class="my-4">
+        <br><br>
+        <div id="competencesContainer" class="d-flex flex-column flex-lg-row flex-wrap">
+
+          <div class="compCard">
+            <div class="compTop">
+              <div class="compLogo">
+                <img src="src/img/flutter.png" alt="Flutter logo">
+              </div>
+
+              <h3 class="compTitle">Flutter</h3>
+            </div>
+
+            <ul>
+              <li>
+                <div class="subCompImg"><img src="src/img/hive.png" alt="Sub competence"></div>
+                <h6>Hive</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/dart.png" alt="Sub competence"></div>
+                <h6>Dart Http</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/flutter.png" alt="Sub competence"></div>
+                <h6>Flutter Mobile</h6>
+              </li>
+            </ul>
+          </div>
+
+          <div class="compCard" style="--b-gradient: linear-gradient(45deg, #0566b6, #e5ac1f)">
+            <div class="compTop">
+              <div class="compLogo">
+                <img src="src/img/python.png" alt="Python logo">
+              </div>
+
+              <h3 class="compTitle">Python</h3>
+            </div>
+
+            <ul>
+              <li>
+                <div class="subCompImg"><img src="src/img/django.png" alt="Sub competence"></div>
+                <h6>Django</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/django.png" alt="Sub competence"></div>
+                <h6>Django REST API</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/flask.webp" alt="Sub competence"></div>
+                <h6>Flask</h6>
+              </li>
+            </ul>
+          </div>
+
+          <div class="compCard" style="--b-gradient: linear-gradient(45deg, #e24c26, #006fb9, #62a714)">
+            <div class="compTop">
+              <div class="compLogo">
+                <img src="src/img/HCJ.png" alt="HTML CSS Javascript logo">
+              </div>
+
+              <h3 class="compTitle">Langages web</h3>
+            </div>
+
+            <ul>
+              <li>
+                <h6>HTML</h6>
+              </li>
+              <li>
+                <h6>CSS</h6>
+              </li>
+              <li>
+                <h6>Javascript</h6>
+              </li>
+            </ul>
+          </div>
+
+          <div class="compCard" style="--b-gradient: linear-gradient(45deg, rgb(148,61,171), rgb(103,33,121))">
+            <div class="compTop">
+              <div class="compLogo">
+                <img src="src/img/csharp.png" alt="C Sharp logo">
+              </div>
+
+              <h3 class="compTitle">C#</h3>
+            </div>
+
+            <ul>
+              <li>
+                <div class="subCompImg"><img src="src/img/dotnet.webp" alt="Sub competence"></div>
+                <h6>.NET Core</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/dotnet.webp" alt="Sub competence"></div>
+                <h6>.NET Framework WPF</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/dotnet.webp" alt="Sub competence"></div>
+                <h6>.NET Framework UWP</h6>
+              </li>
+            </ul>
+          </div>
+
+          <div id="compCardAdobe" class="compCard">
+            <div class="compTop">
+              <div class="compLogo">
+                <img src="src/img/adobe.png" alt="Adobe logo">
+              </div>
+
+              <h3 class="compTitle">Suite Adobe</h3>
+            </div>
+
+            <ul>
+              <li>
+                <div class="subCompImg"><img src="src/img/photoshop.png" alt="Sub competence"></div>
+                <h6>Photoshop</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/lightroom.png" alt="Sub competence"></div>
+                <h6>Lightroom</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/premiere_pro.png" alt="Sub competence"></div>
+                <h6>Premiere Pro</h6>
+              </li>
+              <li>
+                <div class="subCompImg"><img src="src/img/illustrator.png" alt="Sub competence"></div>
+                <h6>Illustrator</h6>
+              </li>
+            </ul>
+          </div>
+
+          <div class="compCard" style="--b-gradient: linear-gradient(45deg, rgb(162,0,21), rgb(224,0,26))">
+            <div class="compTop">
+              <div class="compLogo">
+                <img src="src/img/canon.png" alt="Canon logo">
+              </div>
+
+              <h3 class="compTitle text-center">Photographie</h3>
+            </div>
+
+            <ul>
+              <li>
+                <h6>Portrait</h6>
+              </li>
+              <li>
+                <h6>Macro</h6>
+              </li>
+              <li>
+                <h6>Landscape</h6>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
 

@@ -1,0 +1,146 @@
+#competencesContainer {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.compCard {
+  --ab-decay: -15%;
+  --b-gradient: linear-gradient(45deg, var(--Dblue), var(--Lblue));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 85%;
+  padding: 15px;
+  margin-bottom: 100px;
+  background-color: #1e1f22;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  position: relative;
+}
+
+.compCard::before, .compCard::after {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.compCard::after {
+  top: var(--ab-decay);
+  left: var(--ab-decay);
+
+  background-color: #FFFFFF56;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+
+.compCard::before {
+  bottom: var(--ab-decay);
+  right: var(--ab-decay);
+
+  background: var(--b-gradient);
+}
+
+.compCard#compCardAdobe::before {
+  background-image: url("../src/img/creative_cloud.png");
+  background-size: cover;
+}
+
+.compTop {
+  margin-bottom: 15px;
+}
+
+.compTop h3 {
+  text-align: center;
+}
+
+.compLogo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.compLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.compCard ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.compCard ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 10px;
+}
+
+.subCompImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2rem;
+  margin-right: 5px;
+}
+
+.subCompImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.compCard ul li h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  #competencesContainer {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .compCard {
+    max-width: 30%;
+    min-width: 330px;
+    min-height: 150px;
+    margin: 50px 10%;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 25px;
+  }
+
+  .compTop {
+    margin-bottom: 0;
+    min-width: 50%;
+  }
+
+  .compCard ul {
+    align-items: flex-start;
+    margin-bottom: 0;
+    min-width: 28.25%;
+  }
+
+  .compCard#compCardAdobe::before {
+    background-image: url("../src/img/creative_cloud.png");
+    background-size: 100% 100%;
+  }
+}
