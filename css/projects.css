@@ -74,6 +74,10 @@ main {
   object-fit: contain;
 }
 
+.projCard p {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   #bg-main {
 
@@ -83,8 +87,13 @@ main {
     background-size: cover;
   }
 
+  #projContainer {
+    max-width: 2240px;
+  }
+
   .projCard {
     width: 45%;
+    min-height: 580px;
     max-width: 250px;
   }
 }
