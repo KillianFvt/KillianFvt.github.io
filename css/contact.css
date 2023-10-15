@@ -1,0 +1,73 @@
+body {
+  background: url("../src/img/bg_contact.png") no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(60px);
+}
+
+main {
+  min-height: calc(100vh - 96px - 48px);
+}
+
+main > * {
+  width: 85%;
+}
+
+main > label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+main > label > input, main > label > textarea {
+  width: 100%;
+  background-color: #1e1f22;
+  border: none;
+}
+
+button {
+  background-color: var(--Dblue);
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#message {
+  opacity: 0;
+  color: #d00000;
+  transition: all 0.3s ease-out;
+}
+
+#email {
+  opacity: 0;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  display: none;
+}
+
+#email:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: var(--Lblue);
+}
+
+@media (min-width: 768px) {
+
+  main {
+    min-height: calc(100vh - 56px - 48px);
+  }
+
+  main > * {
+    width: 50%;
+    max-width: 500px;
+  }
+}

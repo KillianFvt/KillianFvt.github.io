@@ -73,6 +73,10 @@ body {
   font-weight: normal;
 }
 
+footer {
+  background-color: #1e1f22;
+}
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
